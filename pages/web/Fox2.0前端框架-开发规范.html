@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Fox2.0前端框架-开发规范 | Fox-Wikis</title>
+    <meta name="description" content="全新的FOX">
+    <link rel="icon" href="/app.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.d5b61a21.css" as="style"><link rel="preload" href="/assets/js/app.6be13b1b.js" as="script"><link rel="preload" href="/assets/js/2.cf95f4ea.js" as="script"><link rel="preload" href="/assets/js/44.c9419635.js" as="script"><link rel="prefetch" href="/assets/js/10.6373c5aa.js"><link rel="prefetch" href="/assets/js/11.ce8823c8.js"><link rel="prefetch" href="/assets/js/12.369b204f.js"><link rel="prefetch" href="/assets/js/13.f191ade8.js"><link rel="prefetch" href="/assets/js/14.e133e94d.js"><link rel="prefetch" href="/assets/js/15.13c19680.js"><link rel="prefetch" href="/assets/js/16.99c95a04.js"><link rel="prefetch" href="/assets/js/17.ed98f0a2.js"><link rel="prefetch" href="/assets/js/18.c85ba4b9.js"><link rel="prefetch" href="/assets/js/19.fd53435f.js"><link rel="prefetch" href="/assets/js/20.c4327384.js"><link rel="prefetch" href="/assets/js/21.78f7cd1a.js"><link rel="prefetch" href="/assets/js/22.cb27264f.js"><link rel="prefetch" href="/assets/js/23.d5d46f2b.js"><link rel="prefetch" href="/assets/js/24.dcd5fa4c.js"><link rel="prefetch" href="/assets/js/25.f1e3a420.js"><link rel="prefetch" href="/assets/js/26.d18fdf33.js"><link rel="prefetch" href="/assets/js/27.d48d31d7.js"><link rel="prefetch" href="/assets/js/28.a6f9bb79.js"><link rel="prefetch" href="/assets/js/29.516fcfd7.js"><link rel="prefetch" href="/assets/js/3.4060668e.js"><link rel="prefetch" href="/assets/js/30.8b9f22cc.js"><link rel="prefetch" href="/assets/js/31.f0860eb1.js"><link rel="prefetch" href="/assets/js/32.5b7ff02c.js"><link rel="prefetch" href="/assets/js/33.9c96eb94.js"><link rel="prefetch" href="/assets/js/34.4b6ff991.js"><link rel="prefetch" href="/assets/js/35.4552b589.js"><link rel="prefetch" href="/assets/js/36.7e622afa.js"><link rel="prefetch" href="/assets/js/37.194204c8.js"><link rel="prefetch" href="/assets/js/38.4876a45a.js"><link rel="prefetch" href="/assets/js/39.00ee2908.js"><link rel="prefetch" href="/assets/js/4.0d44595b.js"><link rel="prefetch" href="/assets/js/40.6d9d5c8b.js"><link rel="prefetch" href="/assets/js/41.dd73d56e.js"><link rel="prefetch" href="/assets/js/42.c6aade2a.js"><link rel="prefetch" href="/assets/js/43.5f72f70e.js"><link rel="prefetch" href="/assets/js/45.3b80c2ec.js"><link rel="prefetch" href="/assets/js/46.f0a3a65a.js"><link rel="prefetch" href="/assets/js/47.0d5660ce.js"><link rel="prefetch" href="/assets/js/48.c15f26f1.js"><link rel="prefetch" href="/assets/js/49.8d9e2667.js"><link rel="prefetch" href="/assets/js/5.eaf4b398.js"><link rel="prefetch" href="/assets/js/6.7a92b9fa.js"><link rel="prefetch" href="/assets/js/7.98a19337.js"><link rel="prefetch" href="/assets/js/8.66254435.js"><link rel="prefetch" href="/assets/js/9.0bb35de5.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d5b61a21.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Fox-Wikis</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="/pages/foxserver/quickstart/新建服务.html" class="nav-link">Fox服务</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Android" class="dropdown-title"><span class="title">Android</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/android/fox2.0/Fox2.0平台环境准备.html" class="nav-link">FoxShell2.0</a></li><li class="dropdown-item"><!----> <a href="/pages/android/fox3.0/Fox3.0 android外壳新特性.html" class="nav-link">FoxShell3.0</a></li></ul></div></div><div class="nav-item"><a href="/pages/ios/Fox3.0 插件开发指南-IOS.html" class="nav-link">IOS</a></div><div class="nav-item"><a href="/pages/web/Fox2.0前端框架-工具介绍.html" class="nav-link">前端框架</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端组件" class="dropdown-title"><span class="title">前端组件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/components/2.0/catButton.html" class="nav-link">2.0.0</a></li><li class="dropdown-item"><!----> <a href="/pages/components/1.0/" class="nav-link">1.0.0</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于作者" class="dropdown-title"><span class="title">关于作者</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Archlizz/Archlizz.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub地址
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://jiangch316.github.io/fox_wikis.github.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  个人博客
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="/pages/foxserver/quickstart/新建服务.html" class="nav-link">Fox服务</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Android" class="dropdown-title"><span class="title">Android</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/android/fox2.0/Fox2.0平台环境准备.html" class="nav-link">FoxShell2.0</a></li><li class="dropdown-item"><!----> <a href="/pages/android/fox3.0/Fox3.0 android外壳新特性.html" class="nav-link">FoxShell3.0</a></li></ul></div></div><div class="nav-item"><a href="/pages/ios/Fox3.0 插件开发指南-IOS.html" class="nav-link">IOS</a></div><div class="nav-item"><a href="/pages/web/Fox2.0前端框架-工具介绍.html" class="nav-link">前端框架</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端组件" class="dropdown-title"><span class="title">前端组件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/components/2.0/catButton.html" class="nav-link">2.0.0</a></li><li class="dropdown-item"><!----> <a href="/pages/components/1.0/" class="nav-link">1.0.0</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于作者" class="dropdown-title"><span class="title">关于作者</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Archlizz/Archlizz.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub地址
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://jiangch316.github.io/fox_wikis.github.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  个人博客
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>前端框架</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/web/Fox2.0前端框架-工具介绍.html" class="sidebar-link">工具介绍</a></li><li><a href="/pages/web/Fox2.0前端框架-开发规范.html" class="active sidebar-link">开发规范</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/web/Fox2.0前端框架-开发规范.html#_1-前端目录结构" class="sidebar-link">1.前端目录结构</a></li><li class="sidebar-sub-header"><a href="/pages/web/Fox2.0前端框架-开发规范.html#_2-后端目录结构" class="sidebar-link">2.后端目录结构</a></li><li class="sidebar-sub-header"><a href="/pages/web/Fox2.0前端框架-开发规范.html#_3-js规范" class="sidebar-link">3.JS规范</a></li></ul></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>插件开发</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/web/Fox2.0前端框架-插件-Device接口.html" class="sidebar-link">Device接口</a></li><li><a href="/pages/web/Fox2.0前端框架-插件-Native接口.html" class="sidebar-link">Native接口</a></li></ul></section></li><li><a href="/pages/web/Fox2.0前端框架-服务请求.html" class="sidebar-link">服务请求</a></li><li><a href="/pages/web/Fox2.0前端框架-校验器.html" class="sidebar-link">校验器</a></li><li><a href="/pages/web/Fox2.0前端框架-SPA.html" class="sidebar-link">单页面框架(SPA)</a></li><li><a href="/pages/web/Fox2.0前端框架-MPA.html" class="sidebar-link">多页面框架(MPA)</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="fox2-0前端框架-开发规范"><a href="#fox2-0前端框架-开发规范" class="header-anchor">#</a> Fox2.0前端框架-开发规范</h1> <hr> <p></p><div class="table-of-contents"><ul><li><a href="#_1-前端目录结构">1.前端目录结构</a></li><li><a href="#_2-后端目录结构">2.后端目录结构</a></li><li><a href="#_3-js规范">3.JS规范</a><ul><li><a href="#_3-1-类型">3.1 类型</a></li><li><a href="#_3-2-对象">3.2 对象</a></li><li><a href="#_3-3-数组">3.3 数组</a></li><li><a href="#_3-3-字符串">3.3 字符串</a></li><li><a href="#_3-5-函数">3.5 函数</a></li><li><a href="#_3-6-属性">3.6 属性</a></li><li><a href="#_3-7-变量">3.7 变量</a></li><li><a href="#_3-8-条件表达式和等号">3.8 条件表达式和等号</a></li><li><a href="#_3-9-块">3.9 块</a></li><li><a href="#_3-10-注释">3.10 注释</a></li><li><a href="#_3-11-空白">3.11 空白</a></li><li><a href="#_3-12-逗号">3.12 逗号</a></li><li><a href="#_3-13-分号">3.13 分号</a></li><li><a href="#_3-14-类型转换">3.14 类型转换</a></li><li><a href="#_3-14-命名约定">3.14 命名约定</a></li></ul></li></ul></div><p></p> <h2 id="_1-前端目录结构"><a href="#_1-前端目录结构" class="header-anchor">#</a> 1.前端目录结构</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>.
+├── custom                              项目相关配置和资源目录
+│   ├── css                             项目公共css
+│   ├── fonts                           项目公共fonts
+│   ├── js                              项目公共js(工具类)
+│   ├── plugins                         项目定义原生插件js接口 
+│   ├── plugins_ios                     项目定义ios原生插件js接口
+│   ├── route-tables                    项目路由表
+│   ├── templates                       自定义组件
+│   └── main**.js                       入口函数、服务过滤器、录用过滤器、校验功能配置
+├── debug                               调试信息
+│   ├── fox.device                      外设调试配置
+│   ├── fox.file                        原生文件操作调试配置
+│   ├── fox.native                      原生native接口调试配置
+│   ├── fox.preference                  原生prefrence调试配置
+│   └── fox.servcie                     服务请求调试配置
+├── libs                                公共lib目录
+│   ├── fox                             fox公共库
+│   ├── fox-ui                          fox ui基础库
+│   ├── lib                             vue、console整合库
+│   ├── plugins                         平台原生访问接口
+│   └── templates                       公共组件库
+├── pages                               项目页面目录
+│   └── phone
+│       └── demo
+├── resource
+│   └── image
+└── themes                              主题目录
+    └── default
+        ├── css                         主题css 
+        ├── fonts
+        └── images                       主题font
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><blockquote><p>注意事项
+a、custom/css、custom/font是放置无主题属性的css和font、而theme/css、theme/font是主题相关的，优先考虑theme。
+b、项目中多处使用的js方法，应当抽取到custom/js中。
+c、pages下的文件夹、文件命名不推荐使用驼峰风格，应该使用下划线分隔：
+schoolScene  不推荐
+school_scene 推荐</p></blockquote> <h2 id="_2-后端目录结构"><a href="#_2-后端目录结构" class="header-anchor">#</a> 2.后端目录结构</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>--工程
+----服务        后端服务
+------common    公共服务
+------配置文件  服务配置文件
+----公用        工具类、公共函数
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><blockquote><p>注意事项
+a、项目中的公共方法尽量抽取出来，放在服务/common或公用目录中
+b、SQL不用使用+拼接，而是使用占位符预编译的方式</p></blockquote> <h2 id="_3-js规范"><a href="#_3-js规范" class="header-anchor">#</a> 3.JS规范</h2> <h3 id="_3-1-类型"><a href="#_3-1-类型" class="header-anchor">#</a> 3.1 类型</h3> <p>原始值: 相当于传值(JavaScript对象都提供了字面量)，使用字面量创建对象。</p> <ul><li>string</li> <li>number</li> <li>Boolean</li> <li>null</li> <li>Undefined</li></ul> <blockquote><p>let foo = 1,bar = foo; bar = 9; console.log(foo, bar); // =&gt; 1, 9</p></blockquote> <p>复杂类型: 相当于传引用</p> <ul><li>object</li> <li>array</li> <li>function</li></ul> <blockquote><p>let foo = [1, 2],bar = foo;<br>
+bar[0] = 9;
+console.log(foo[0], bar[0]); // =&gt; 9, 9</p></blockquote> <h3 id="_3-2-对象"><a href="#_3-2-对象" class="header-anchor">#</a> 3.2 对象</h3> <ul><li>使用字面值创建对象</li></ul> <blockquote><pre><code>// bad
+ let item = new Object();
+// good
+    let item = {};
+</code></pre></blockquote> <ul><li>不要使用保留字 reserved words 作为键</li></ul> <blockquote><p>// bad
+let superman = {
+class: 'superhero',
+default: { clark: 'kent' },
+private: true
+}; // good
+let superman = {
+klass: 'superhero',
+defaults: { clark: 'kent' },
+hidden: true
+};</p></blockquote> <h3 id="_3-3-数组"><a href="#_3-3-数组" class="header-anchor">#</a> 3.3 数组</h3> <ul><li>使用字面值创建数组</li></ul> <blockquote><p>// bad
+let items = new Array();
+// good
+let items = [];</p></blockquote> <ul><li>如果你不知道数组的长度，使用push</li></ul> <blockquote><p>let someStack = [];
+// bad
+someStack[someStack.length] = 'abracadabra';
+// good
+someStack.push('abracadabra');</p></blockquote> <ul><li>当你需要拷贝数组时使用slice. jsPerf</li></ul> <blockquote><p>let len = items.length,
+itemsCopy = [],
+i;
+// bad
+for (i = 0; i &lt; len; i++) {
+itemsCopy[i] = items[i];
+}
+// good
+itemsCopy = items.slice();</p></blockquote> <ul><li>使用slice将类数组的对象转成数组</li></ul> <blockquote><p>function trigger() {
+let args = [].slice.apply(arguments);
+...
+}</p></blockquote> <h3 id="_3-3-字符串"><a href="#_3-3-字符串" class="header-anchor">#</a> 3.3 字符串</h3> <ul><li>对字符串使用单引号 ''(因为大多时候我们的字符串。特别html会出现&quot;)</li></ul> <blockquote></blockquote> <pre><code> // bad
+ let name = &quot;Bob Parr&quot;;
+ // good
+ let name = 'Bob Parr';
+ // bad
+ let fullName = &quot;Bob &quot; + this.lastName;
+ // good
+ let fullName = 'Bob ' + this.lastName;
+</code></pre> <ul><li>超过80(也有规定140的，项目具体可制定)个字符的字符串应该使用字符串连接换行</li> <li>注: 如果过度使用，长字符串连接可能会对性能有影响. jsPerf &amp; Discussion</li></ul> <blockquote><p>// bad
+let errorMessage = 'This is a super long error that was thrown because of Batman. When you stop to think about how Batman had
+anything to do with this, you would get nowhere fast.';</p> <pre><code>// bad
+let errorMessage = 'This is a super long error that \
+    was thrown because of Batman. \
+    When you stop to think about \
+    how Batman had anything to do \
+    with this, you would get nowhere \
+    fast.';
+
+
+// good
+let errorMessage = 'This is a super long error that ' +
+    'was thrown because of Batman.' +
+    'When you stop to think about ' +
+    'how Batman had anything to do ' +
+    'with this, you would get nowhere ' +
+    'fast.';
+</code></pre></blockquote> <ul><li>编程时使用join而不是字符串连接来构建字符串，特别是IE: jsPerf</li></ul> <blockquote><p>let items,
+messages,
+length, i;</p> <pre><code>messages = [{
+    state: 'success',
+    message: 'This one worked.'
+},{
+    state: 'success',
+    message: 'This one worked as well.'
+},{
+    state: 'error',
+    message: 'This one did not work.'
+}];
+
+length = messages.length;
+
+// bad
+function inbox(messages) {
+items = '&lt;ul&gt;';
+
+for (i = 0; i &lt; length; i++) {
+    items += '&lt;li&gt;' + messages[i].message + '&lt;/li&gt;';
+}
+
+return items + '&lt;/ul&gt;';
+}
+
+// good
+function inbox(messages) {
+items = [];
+
+for (i = 0; i &lt; length; i++) {
+    items[i] = messages[i].message;
+}
+
+return '&lt;ul&gt;&lt;li&gt;' + items.join('&lt;/li&gt;&lt;li&gt;') + '&lt;/li&gt;&lt;/ul&gt;';
+}
+</code></pre></blockquote> <h3 id="_3-5-函数"><a href="#_3-5-函数" class="header-anchor">#</a> 3.5 函数</h3> <ul><li>函数表达式</li></ul> <blockquote><p>// 匿名函数表达式
+let anonymous = function() {
+return true;
+};</p> <pre><code>// 有名函数表达式
+let named = function named() {
+    return true;
+};
+
+// 立即调用函数表达式
+(function() {
+    console.log('Welcome to the Internet. Please follow me.');
+})();
+</code></pre></blockquote> <ul><li>绝对不要在一个非函数块里声明一个函数，把那个函数赋给一个变量。浏览器允许你这么做，但是它们解析不同</li> <li>注: ECMA-262定义把块定义为一组语句，函数声明不是一个语句。阅读ECMA-262对这个问题的说明</li></ul> <blockquote><p>// bad
+if (currentUser) {
+function test() {
+console.log('Nope.');
+}
+}</p> <pre><code>// good
+if (currentUser) {
+let test = function test() {
+    console.log('Yup.');
+};
+}
+</code></pre></blockquote> <ul><li>绝对不要把参数命名为 arguments, 这将会逾越函数作用域内传过来的 arguments 对象</li></ul> <blockquote><p>// bad
+function nope(name, options, arguments) {
+// ...stuff...
+}</p> <pre><code>// good
+function yup(name, options, args) {
+    // ...stuff...
+}
+</code></pre></blockquote> <h3 id="_3-6-属性"><a href="#_3-6-属性" class="header-anchor">#</a> 3.6 属性</h3> <ul><li>当使用变量和特殊非法变量名时，访问属性时可以使用中括号(. 优先)</li></ul> <blockquote><pre><code>let luke = {
+        jedi: true,
+        age: 28
+    };
+
+function getProp(prop) {
+    return luke[prop];
+}
+
+let isJedi = getProp('jedi');
+</code></pre></blockquote> <h3 id="_3-7-变量"><a href="#_3-7-变量" class="header-anchor">#</a> 3.7 变量</h3> <ul><li>总是使用 let 来声明变量，如果不这么做将导致产生全局变量，我们要避免污染全局命名空间</li></ul> <blockquote><p>// bad
+superPower = new SuperPower();</p> <pre><code>// good
+let superPower = new SuperPower();
+</code></pre></blockquote> <ul><li>使用一个 let 以及新行声明多个变量，缩进4个空格</li></ul> <blockquote><pre><code>// bad
+let items = getItems();
+let goSportsTeam = true;
+let dragonball = 'z';
+
+// good
+let items = getItems(),
+    goSportsTeam = true,
+    dragonball = 'z';
+</code></pre></blockquote> <ul><li>最后再声明未赋值的变量，当你想引用之前已赋值变量的时候很有用</li></ul> <blockquote><p>// bad
+let i, len, dragonball,
+items = getItems(),
+goSportsTeam = true;
+// bad
+let i, items = getItems(),
+dragonball,
+goSportsTeam = true,
+len;</p> <pre><code>// good
+let items = getItems(),
+    goSportsTeam = true,
+    dragonball,
+    length,
+    i;
+</code></pre></blockquote> <ul><li>在作用域顶部声明变量，避免变量声明和赋值引起的相关问题</li></ul> <blockquote><p>// bad
+function() {
+test();
+console.log('doing stuff..');</p> <pre><code>    //..other stuff..
+
+    let name = getName();
+
+    if (name === 'test') {
+        return false;
+    }
+
+    return name;
+}
+
+// good
+function() {
+    let name = getName();
+
+    test();
+    console.log('doing stuff..');
+
+    //..other stuff..
+
+    if (name === 'test') {
+        return false;
+    }
+
+    return name;
+}
+
+// bad
+function() {
+    let name = getName();
+
+    if (!arguments.length) {
+        return false;
+    }
+
+    return true;
+}
+
+// good
+function() {
+    if (!arguments.length) {
+        return false;
+    }
+
+    let name = getName();
+
+    return true;
+}
+</code></pre></blockquote> <h3 id="_3-8-条件表达式和等号"><a href="#_3-8-条件表达式和等号" class="header-anchor">#</a> 3.8 条件表达式和等号</h3> <ul><li>合理使用 === 和 !== 以及 == 和 !=</li> <li>合理使用表达式逻辑操作运算</li> <li>条件表达式的强制类型转换遵循以下规则
+<ol><li>对象 被计算为 true</li> <li>undefined 被计算为 false</li> <li>null 被计算为 false</li> <li>布尔值 被计算为 布尔的值</li> <li>数字 如果是 +0, -0, or NaN 被计算为 false , 否则为 true</li> <li>字符串 如果是空字符串 '' 则被计算为 false, 否则为 true</li></ol></li></ul> <blockquote><pre><code>if ([0]) {
+    // true
+    // An array is an object, objects evaluate to true
+}
+</code></pre></blockquote> <ul><li>使用快捷方式</li></ul> <blockquote><p>// bad
+if (name !== '') {
+// ...stuff...
+}</p> <pre><code>// good
+if (name) {
+    // ...stuff...
+}
+
+// bad
+if (collection.length &gt; 0) {
+    // ...stuff...
+}
+
+// good
+if (collection.length) {
+    // ...stuff...
+}
+</code></pre></blockquote> <ul><li>阅读 Truth Equality and JavaScript 了解更多</li></ul> <h3 id="_3-9-块"><a href="#_3-9-块" class="header-anchor">#</a> 3.9 块</h3> <ul><li>给所有多行的块使用大括号</li></ul> <blockquote><p>// bad
+if (test)
+return false;</p> <pre><code>// good
+if (test) return false;
+
+// good
+if (test) {
+    return false;
+}
+
+// bad
+function() { return false; }
+
+// good
+function() {
+    return false;
+}
+</code></pre></blockquote> <h3 id="_3-10-注释"><a href="#_3-10-注释" class="header-anchor">#</a> 3.10 注释</h3> <ul><li>使用 /** ... */ 进行多行注释，包括描述，指定类型以及参数值和返回值</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token operator">&gt;</span> <span class="token comment">// bad</span>
+<span class="token operator">&gt;</span>     <span class="token comment">// make() returns a new element</span>
+<span class="token operator">&gt;</span>     <span class="token comment">// based on the passed in tag name</span>
+<span class="token operator">&gt;</span>     <span class="token comment">//</span>
+<span class="token operator">&gt;</span>     <span class="token comment">// @param &lt;String&gt; tag</span>
+<span class="token operator">&gt;</span>     <span class="token comment">// @return &lt;Element&gt; element</span>
+<span class="token operator">&gt;</span>     <span class="token keyword">function</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token parameter">tag</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token operator">&gt;</span> 
+<span class="token operator">&gt;</span>         <span class="token comment">// ...stuff...</span>
+<span class="token operator">&gt;</span> 
+<span class="token operator">&gt;</span>         <span class="token keyword">return</span> element<span class="token punctuation">;</span>
+<span class="token operator">&gt;</span>     <span class="token punctuation">}</span>
+<span class="token operator">&gt;</span> 
+<span class="token operator">&gt;</span>     <span class="token comment">// good</span>
+<span class="token operator">&gt;</span>     <span class="token comment">/**
+&gt;     * make() returns a new element
+&gt;     * based on the passed in tag name
+&gt;     *
+&gt;     * @param &lt;String&gt; tag
+&gt;     * @return &lt;Element&gt; element
+&gt;     */</span>
+<span class="token operator">&gt;</span>     <span class="token keyword">function</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token parameter">tag</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token operator">&gt;</span> 
+<span class="token operator">&gt;</span>         <span class="token comment">// ...stuff...</span>
+<span class="token operator">&gt;</span> 
+<span class="token operator">&gt;</span>         <span class="token keyword">return</span> element<span class="token punctuation">;</span>
+<span class="token operator">&gt;</span>     <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><ul><li>使用 // 进行单行注释，在评论对象的上面进行单行注释，注释前放一个空行</li></ul> <blockquote><p>// bad
+let active = true;  // is current tab</p> <pre><code>// good
+// is current tab
+let active = true;
+
+// bad
+function getType() {
+    console.log('fetching type...');
+        // set the default type to 'no type'
+    let type = this._type || 'no type';
+
+    return type;
+}
+
+// good
+function getType() {
+    console.log('fetching type...');
+
+    // set the default type to 'no type'
+    let type = this._type || 'no type';
+
+    return type;
+}
+</code></pre></blockquote> <ul><li>如果你有一个问题需要重新来看一下或如果你建议一个需要被实现的解决方法的话需要在你的注释前面加上 FIXME 或 TODO 帮助其他人迅速理解</li></ul> <blockquote><pre><code>function Calculator() {
+
+    // FIXME: shouldn't use a global here
+    total = 0;
+
+    return this;
+}
+function Calculator() {
+
+    // TODO: total should be configurable by an options param
+    this.total = 0;
+
+    return this;
+}
+</code></pre></blockquote> <ul><li>满足规范的文档，在需要文档的时候，可以尝试jsdoc</li></ul> <h3 id="_3-11-空白"><a href="#_3-11-空白" class="header-anchor">#</a> 3.11 空白</h3> <ul><li>缩进、格式化能帮助团队更快得定位修复代码BUG</li> <li>将tab设为4个空格</li></ul> <blockquote><p>// bad
+function() {
+∙∙let name;
+}</p> <pre><code>// bad
+function() {
+∙let name;
+}
+
+// good
+function() {
+∙∙∙∙let name;
+}
+</code></pre></blockquote> <ul><li>大括号前放一个空格</li></ul> <blockquote><p>// bad
+function test(){
+console.log('test');
+}</p> <pre><code>// good
+function test() {
+    console.log('test');
+}
+
+// bad
+dog.set('attr',{
+    age: '1 year',
+    breed: 'Bernese Mountain Dog'
+});
+
+// good
+dog.set('attr', {
+    age: '1 year',
+    breed: 'Bernese Mountain Dog'
+});
+</code></pre></blockquote> <ul><li>在做长方法链时使用缩进</li></ul> <blockquote><p>// bad
+<code>$('#items').find('.selected').highlight().end().find('.open').updateCount();</code></p> <p>good<br>
+$('#items')
+.find('.selected')
+.highlight()
+.end()
+.find('.open')
+.updateCount();
+// bad
+let leds = stage.selectAll('.led').data(data).enter().append('svg:svg').class('led',
+true)
+.attr('width',  (radius + margin) * 2).append('svg:g')
+.attr('transform', 'translate(' + (radius + margin) + ',' + (radius + margin) + ')')
+.call(tron.led); // good let leds = stage.selectAll('.led')
+.data(data)
+.enter().append('svg:svg')
+.class('led', true)
+.attr('width',  (radius + margin) * 2)
+.append('svg:g')
+.attr('transform', 'translate(' + (radius + margin) + ',' + (radius + margin) + ')')
+.call(tron.led);</p></blockquote> <h3 id="_3-12-逗号"><a href="#_3-12-逗号" class="header-anchor">#</a> 3.12 逗号</h3> <ul><li>不要将逗号放前面</li></ul> <blockquote><p>// bad
+let once
+, upon
+, aTime;</p> <pre><code>// good
+let once,
+    upon,
+    aTime;
+
+// bad
+let hero = {
+        firstName: 'Bob'
+    , lastName: 'Parr'
+    , heroName: 'Mr. Incredible'
+    , superPower: 'strength'
+};
+
+// good
+let hero = {
+    firstName: 'Bob',
+    lastName: 'Parr',
+    heroName: 'Mr. Incredible',
+    superPower: 'strength'
+};
+</code></pre></blockquote> <ul><li>不要加多余的逗号，这可能会在IE下引起错误，同时如果多一个逗号某些ES3的实现会计算多数组的长度</li></ul> <blockquote><p>// bad
+let hero = {
+firstName: 'Kevin',
+lastName: 'Flynn',
+};</p> <pre><code>let heroes = [
+'Batman',
+'Superman',
+];
+
+// good
+let hero = {
+firstName: 'Kevin',
+lastName: 'Flynn'
+};
+
+let heroes = [
+'Batman',
+'Superman'
+];
+</code></pre></blockquote> <h3 id="_3-13-分号"><a href="#_3-13-分号" class="header-anchor">#</a> 3.13 分号</h3> <ul><li>语句结束一定要加分号</li></ul> <blockquote><pre><code>// bad
+(function() {
+    let name = 'Skywalker'
+    return name
+})()
+
+// good
+(function() {
+    let name = 'Skywalker';
+    return name;
+})();
+
+// good
+;(function() {
+    let name = 'Skywalker';
+    return name;
+})();
+</code></pre></blockquote> <h3 id="_3-14-类型转换"><a href="#_3-14-类型转换" class="header-anchor">#</a> 3.14 类型转换</h3> <ul><li>在语句的开始执行类型转换.</li> <li>字符串</li></ul> <blockquote><pre><code>this.reviewScore = 9;
+
+// bad
+let totalScore = this.reviewScore + '';
+
+// good
+let totalScore = '' + this.reviewScore;
+
+// bad
+let totalScore = '' + this.reviewScore + ' total score';
+
+// good
+let totalScore = this.reviewScore + ' total score';
+</code></pre></blockquote> <ul><li>对数字使用 parseInt 并且总是带上类型转换的基数.，如parseInt(value, 10)</li></ul> <blockquote><p>let inputValue = '4';</p> <pre><code>// bad
+let val = new Number(inputValue);
+
+// bad
+let val = +inputValue;
+
+// bad
+let val = inputValue &gt;&gt; 0;
+
+// bad
+let val = parseInt(inputValue);
+
+// good
+let val = Number(inputValue);
+
+// good
+let val = parseInt(inputValue, 10);
+
+// good
+/**
+* parseInt was the reason my code was slow.
+* Bitshifting the String to coerce it to a
+* Number made it a lot faster.
+*/
+let val = inputValue &gt;&gt; 0;
+</code></pre></blockquote> <ul><li>布尔值</li></ul> <blockquote><p>let age = 0;</p> <pre><code>// bad
+let hasAge = new Boolean(age);
+
+// good
+let hasAge = Boolean(age);
+
+// good
+let hasAge = !!age;
+</code></pre></blockquote> <h3 id="_3-14-命名约定"><a href="#_3-14-命名约定" class="header-anchor">#</a> 3.14 命名约定</h3> <ul><li>避免单个字符名，让你的变量名有描述意义</li></ul> <blockquote><p>// bad
+function q() {
+// ...stuff...
+}
+// good
+function query() {
+// ..stuff..
+}</p></blockquote> <ul><li>当命名对象、函数和实例时使用驼峰命名规则</li></ul> <blockquote><p>// bad
+let OBJEcttsssss = {};
+let this_is_my_object = {};
+let this-is-my-object = {};
+function c() {};
+let u = new user({
+name: 'Bob Parr'
+});
+// good
+let thisIsMyObject = {};
+function thisIsMyFunction() {};
+let user = new User({
+name: 'Bob Parr'
+});</p></blockquote> <ul><li>当命名构造函数或类时使用驼峰式大写</li></ul> <blockquote><p>// bad
+function user(options) {
+this.name = options.name;
+}
+let bad = new user({
+name: 'nope'
+});
+// good
+function User(options) {
+this.name = options.name;
+}
+let good = new User({
+name: 'yup'
+});</p></blockquote> <ul><li>命名私有属性时前面加个下划线</li></ul> <blockquote><pre><code>// bad
+this.__firstName__ = 'Panda';
+this.firstName_ = 'Panda';
+
+// good
+this._firstName = 'Panda';
+</code></pre></blockquote> <ul><li>当保存对 this 的引用时使用 self(python 风格),避免this  issue.Angular建议使用vm(MVVM模式中view-model)</li></ul> <blockquote><p>// good
+function() {
+let self = this;
+return function() {
+console.log(self);
+};
+}</p></blockquote></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新于:</span> <span class="time">12/18/2019, 4:28:12 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/pages/web/Fox2.0前端框架-工具介绍.html" class="prev">工具介绍</a></span> <span class="next"><a href="/pages/web/Fox2.0前端框架-插件-Device接口.html">Device接口</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.6be13b1b.js" defer></script><script src="/assets/js/2.cf95f4ea.js" defer></script><script src="/assets/js/44.c9419635.js" defer></script>
+  </body>
+</html>

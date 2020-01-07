@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Fox3.0 常用工具类介绍(IOS) | Fox-Wikis</title>
+    <meta name="description" content="全新的FOX">
+    <link rel="icon" href="/app.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.d5b61a21.css" as="style"><link rel="preload" href="/assets/js/app.6be13b1b.js" as="script"><link rel="preload" href="/assets/js/2.cf95f4ea.js" as="script"><link rel="preload" href="/assets/js/38.4876a45a.js" as="script"><link rel="prefetch" href="/assets/js/10.6373c5aa.js"><link rel="prefetch" href="/assets/js/11.ce8823c8.js"><link rel="prefetch" href="/assets/js/12.369b204f.js"><link rel="prefetch" href="/assets/js/13.f191ade8.js"><link rel="prefetch" href="/assets/js/14.e133e94d.js"><link rel="prefetch" href="/assets/js/15.13c19680.js"><link rel="prefetch" href="/assets/js/16.99c95a04.js"><link rel="prefetch" href="/assets/js/17.ed98f0a2.js"><link rel="prefetch" href="/assets/js/18.c85ba4b9.js"><link rel="prefetch" href="/assets/js/19.fd53435f.js"><link rel="prefetch" href="/assets/js/20.c4327384.js"><link rel="prefetch" href="/assets/js/21.78f7cd1a.js"><link rel="prefetch" href="/assets/js/22.cb27264f.js"><link rel="prefetch" href="/assets/js/23.d5d46f2b.js"><link rel="prefetch" href="/assets/js/24.dcd5fa4c.js"><link rel="prefetch" href="/assets/js/25.f1e3a420.js"><link rel="prefetch" href="/assets/js/26.d18fdf33.js"><link rel="prefetch" href="/assets/js/27.d48d31d7.js"><link rel="prefetch" href="/assets/js/28.a6f9bb79.js"><link rel="prefetch" href="/assets/js/29.516fcfd7.js"><link rel="prefetch" href="/assets/js/3.4060668e.js"><link rel="prefetch" href="/assets/js/30.8b9f22cc.js"><link rel="prefetch" href="/assets/js/31.f0860eb1.js"><link rel="prefetch" href="/assets/js/32.5b7ff02c.js"><link rel="prefetch" href="/assets/js/33.9c96eb94.js"><link rel="prefetch" href="/assets/js/34.4b6ff991.js"><link rel="prefetch" href="/assets/js/35.4552b589.js"><link rel="prefetch" href="/assets/js/36.7e622afa.js"><link rel="prefetch" href="/assets/js/37.194204c8.js"><link rel="prefetch" href="/assets/js/39.00ee2908.js"><link rel="prefetch" href="/assets/js/4.0d44595b.js"><link rel="prefetch" href="/assets/js/40.6d9d5c8b.js"><link rel="prefetch" href="/assets/js/41.dd73d56e.js"><link rel="prefetch" href="/assets/js/42.c6aade2a.js"><link rel="prefetch" href="/assets/js/43.5f72f70e.js"><link rel="prefetch" href="/assets/js/44.c9419635.js"><link rel="prefetch" href="/assets/js/45.3b80c2ec.js"><link rel="prefetch" href="/assets/js/46.f0a3a65a.js"><link rel="prefetch" href="/assets/js/47.0d5660ce.js"><link rel="prefetch" href="/assets/js/48.c15f26f1.js"><link rel="prefetch" href="/assets/js/49.8d9e2667.js"><link rel="prefetch" href="/assets/js/5.eaf4b398.js"><link rel="prefetch" href="/assets/js/6.7a92b9fa.js"><link rel="prefetch" href="/assets/js/7.98a19337.js"><link rel="prefetch" href="/assets/js/8.66254435.js"><link rel="prefetch" href="/assets/js/9.0bb35de5.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d5b61a21.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Fox-Wikis</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="/pages/foxserver/quickstart/新建服务.html" class="nav-link">Fox服务</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Android" class="dropdown-title"><span class="title">Android</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/android/fox2.0/Fox2.0平台环境准备.html" class="nav-link">FoxShell2.0</a></li><li class="dropdown-item"><!----> <a href="/pages/android/fox3.0/Fox3.0 android外壳新特性.html" class="nav-link">FoxShell3.0</a></li></ul></div></div><div class="nav-item"><a href="/pages/ios/Fox3.0 插件开发指南-IOS.html" class="nav-link">IOS</a></div><div class="nav-item"><a href="/pages/web/Fox2.0前端框架-工具介绍.html" class="nav-link">前端框架</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端组件" class="dropdown-title"><span class="title">前端组件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/components/2.0/catButton.html" class="nav-link">2.0.0</a></li><li class="dropdown-item"><!----> <a href="/pages/components/1.0/" class="nav-link">1.0.0</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于作者" class="dropdown-title"><span class="title">关于作者</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Archlizz/Archlizz.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub地址
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://jiangch316.github.io/fox_wikis.github.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  个人博客
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="/pages/foxserver/quickstart/新建服务.html" class="nav-link">Fox服务</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Android" class="dropdown-title"><span class="title">Android</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/android/fox2.0/Fox2.0平台环境准备.html" class="nav-link">FoxShell2.0</a></li><li class="dropdown-item"><!----> <a href="/pages/android/fox3.0/Fox3.0 android外壳新特性.html" class="nav-link">FoxShell3.0</a></li></ul></div></div><div class="nav-item"><a href="/pages/ios/Fox3.0 插件开发指南-IOS.html" class="nav-link">IOS</a></div><div class="nav-item"><a href="/pages/web/Fox2.0前端框架-工具介绍.html" class="nav-link">前端框架</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端组件" class="dropdown-title"><span class="title">前端组件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/components/2.0/catButton.html" class="nav-link">2.0.0</a></li><li class="dropdown-item"><!----> <a href="/pages/components/1.0/" class="nav-link">1.0.0</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于作者" class="dropdown-title"><span class="title">关于作者</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Archlizz/Archlizz.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub地址
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://jiangch316.github.io/fox_wikis.github.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  个人博客
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>FoxShell3.0-IOS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/ios/Fox3.0 插件开发规范-IOS.html" class="sidebar-link">插件开发规范</a></li><li><a href="/pages/ios/Fox3.0 插件开发指南-IOS.html" class="sidebar-link">插件开发指南</a></li><li><a href="/pages/ios/Fox3.0 APP打包指南-IOS.html" class="sidebar-link">APP打包指南</a></li><li><a href="/pages/ios/Fox3.0 常用工具类介绍-IOS.html" class="active sidebar-link">常用工具类</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/ios/Fox3.0 常用工具类介绍-IOS.html#_1、configpreference-配置" class="sidebar-link">1、ConfigPreference 配置</a></li><li class="sidebar-sub-header"><a href="/pages/ios/Fox3.0 常用工具类介绍-IOS.html#_2、fileaccessor-文件访问器" class="sidebar-link">2、FileAccessor 文件访问器</a></li><li class="sidebar-sub-header"><a href="/pages/ios/Fox3.0 常用工具类介绍-IOS.html#_3、httprequester-http访问器" class="sidebar-link">3、HttpRequester HTTP访问器</a></li><li class="sidebar-sub-header"><a href="/pages/ios/Fox3.0 常用工具类介绍-IOS.html#安全管理器-securitymanager" class="sidebar-link">安全管理器 SecurityManager</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="fox3-0-常用工具类介绍-ios"><a href="#fox3-0-常用工具类介绍-ios" class="header-anchor">#</a> Fox3.0 常用工具类介绍(IOS)</h1> <p></p><div class="table-of-contents"><ul><li><a href="#_1、configpreference-配置">1、ConfigPreference 配置</a></li><li><a href="#_2、fileaccessor-文件访问器">2、FileAccessor 文件访问器</a></li><li><a href="#_3、httprequester-http访问器">3、HttpRequester HTTP访问器</a><ul><li><a href="#步骤一：获取应用对应的httprequester（session共享）">步骤一：获取应用对应的HttpRequester（session共享）</a></li><li><a href="#步骤二：进行http通信，其接口如下">步骤二：进行http通信，其接口如下</a></li></ul></li><li><a href="#安全管理器-securitymanager">安全管理器 SecurityManager</a><ul><li><a href="#securitymanager接口说明">SecurityManager接口说明</a></li><li><a href="#icipher接口说明">ICipher接口说明</a></li></ul></li></ul></div><p></p> <h2 id="_1、configpreference-配置"><a href="#_1、configpreference-配置" class="header-anchor">#</a> 1、ConfigPreference 配置</h2> <p>ConfigPreference是Fox移动平台中获取和设置配置的工具类型，我们可以通过该工具类获取client.properties中的配置。</p> <p>例如：
+client.poperties配置如下：</p> <pre><code>#主工程
+web/mainApp=fox
+
+#回退键事件
+web/backAction=javascript:fox.custom.back()
+
+#安全配置
+security/scopes=[Http]
+#security/scopes=[]
+
+#是否启用更新
+version/updateEnabled=false
+
+#版本服务器地址
+version/address=http://139.199.79.118:9705
+</code></pre> <p>获取client.properties中的配置</p> <pre><code>//获取配置
+let pref = ConfigPreference.instance
+//获取主应用名称
+let mainAppName:String? =  pref.get(mark: &quot;web&quot;, key: &quot;mainApp&quot;)
+</code></pre> <h2 id="_2、fileaccessor-文件访问器"><a href="#_2、fileaccessor-文件访问器" class="header-anchor">#</a> 2、FileAccessor 文件访问器</h2> <p>FileAccessor文件访问器，为每个应用的沙箱提供了操作的接口。
+其使用方法如下：</p> <p>步骤一：获取应用对应的FileAccessor</p> <pre><code> //获取文件访问器
+ let fileAccessor = FileAccessor.get(name: &quot;应用名&quot;)
+</code></pre> <p>步骤二：操作文件系统，常用接口如下</p> <pre><code> //获取应用的根目录
+ public func getRoot()-&gt;String
+    
+ //获取应用下的文件路径
+ public func getRootFilePath(path:String)-&gt; String 
+    
+ //获取应用workspace
+ public func getWorkspace()-&gt;String
+    
+ //获取应用workspace下的文件路径
+ public func getWorkspaceFilePath(path:String) -&gt; String
+    
+ //创建新的文件
+ public func createNewFile(path:String) -&gt; Bool
+    
+ //设置最大循环数量
+ public func setMaxCircleCount(count:Int)
+    
+ //创建循环文件
+ public func createCircleFile(parent:String, suffix:String) -&gt; String?
+    
+ //拷贝
+ public func copy(atPath:String, toPath:String) -&gt; Bool
+    
+ //创建此抽象路径名指定的目录
+ public func mkdir(path:String) -&gt; Bool
+    
+ //创建此抽象路径名指定的目录，包括创建必需但不存在的父目录
+ public func mkdirs(path:String) -&gt; Bool
+    
+ //判断文件或文件夹是否存在
+ public func exists(path:String)-&gt;Bool
+    
+ //判断文件是否存在
+ public func isFile(path:String)-&gt;Bool
+    
+ //判断文件夹是否存在
+ public func isDirectory(path:String)-&gt;Bool
+    
+ //删除文件
+ public func delete(path:String) -&gt; Bool
+    
+ //获取文件大小(如果目标文件不存在或为文件夹，则返回-1，否则返回大小)
+ public func getSize(path:String) -&gt; UInt64
+    
+ //列举指定目录下面的文件列表
+ public func list(path:String) -&gt; [String]
+    
+ //获取父亲目录
+ public func getParentDirectory(path:String)-&gt; String? 
+    
+  //写入内容
+ public func setContent(path:String, data:Data) -&gt; Bool
+    
+ //写入内容
+ public func setContentAsString(path:String, str:String) -&gt;  Bool
+    
+ //写入内容(Base64)
+ public func setContentAsBase64(path:String, str:String) -&gt;  Bool
+    
+ //获取内容
+ public func getContent(path:String) -&gt; Data?
+    
+ //以字符串形式获取内容
+ public func getContentAsString(path:String) -&gt; String?
+    
+ //以字符串(Base64)形式获取内容
+ public func getContentAsBase64(path:String) -&gt; String?
+</code></pre> <h2 id="_3、httprequester-http访问器"><a href="#_3、httprequester-http访问器" class="header-anchor">#</a> 3、HttpRequester HTTP访问器</h2> <p>Http访问器，为每个应用提供访问Fox Server的能力。其使用步骤如下：</p> <h3 id="步骤一：获取应用对应的httprequester（session共享）"><a href="#步骤一：获取应用对应的httprequester（session共享）" class="header-anchor">#</a> 步骤一：获取应用对应的HttpRequester（session共享）</h3> <pre><code> let httpRequester = HttpRequester.get(&quot;应用名&quot;)
+</code></pre> <h3 id="步骤二：进行http通信，其接口如下"><a href="#步骤二：进行http通信，其接口如下" class="header-anchor">#</a> 步骤二：进行http通信，其接口如下</h3> <pre><code>//POST请求
+public func request(method:HttpMethod, string:String, header:[String:String]?, data:[String:Any]?, timeout:Int = -1,  callback:@escaping(_ data:Data?, _ response:URLResponse?, _ error:Error?)-&gt;Void) -&gt; HttpRequester
+
+//http请求
+public func request(method:HttpMethod, url:URL, header:[String:String]?, data:Data?, timeout:Int = -1, callback:@escaping(_ data:Data?, _ response:URLResponse?, _ error:Error?)-&gt;Void) -&gt; HttpRequester
+
+//ping测试
+public func ping(address:String, timeout:Int) -&gt; Bool
+
+//判断远程文件是否存在
+public func isRemoteFileExists(address:String, name:String?, path:String, timeout:Int)throws -&gt; Bool
+
+//列举远程文件列表
+public func listRemoteFile(address:String, name:String?, path:String, scale:String?, timeout:Int) throws -&gt;[String]
+
+//获取远程文件的大小
+public func getRemoteFileSize(address:String, name:String?, path:String, timeout:Int) throws -&gt;Int
+
+//获取远程文件的stamp值
+public func getRemoteFileStamp(address:String, name:String?, path:String, timeout:Int) throws -&gt; String
+
+//列举远程文件的md5 stamp
+public func listRemoteFileStamps(address:String, name:String?, path:String, scale:String, timeout:Int)throws -&gt;[String]
+
+//下载文件(异步下载)
+public func download(address:String, name:String?, path:String, savePath:String, timeout:Int,
+                     thumbnail:Bool = false, callback:@escaping(_ code:Int, _ data:Any?)-&gt;Void) throws -&gt; Void
+
+//下载文件
+public func download(address:String, name:String?, path:String, savePath:String, timeout:Int, thumbnail:Bool = false) throws -&gt; Bool
+
+//上传文件(异步上传)
+public func upload(address:String, name:String?, path:String, fileName:String?,
+                   uploadPath:String, timeout:Int, callback:@escaping(_ code:Int, _ data:Any?)-&gt;Void) throws -&gt; Void
+                   
+//上传文件
+public func upload(address:String, name:String?, path:String, fileName:String?,
+                   uploadPath:String, timeout:Int) throws -&gt; Bool
+
+//直接下载文件(异步下载)
+public func directDownload(address:String, data:[String:Any], savePath:String, timeout:Int, callback:@escaping(_ code:Int, _ data:Any?)-&gt;Void) throws -&gt; Void
+
+//直接下载文件
+public func directDownload(address:String, data:[String:Any], savePath:String, timeout:Int) throws -&gt; Bool
+
+//直接上传文件(异步上传)
+public func directUpload(address:String, data:[String:Any],
+                         uploadFilePath:String, timeout:Int, callback:@escaping(_ code:Int, _ data:Any?)-&gt;Void) throws -&gt; Void
+
+//直接上传文件
+public func directUpload(address:String, data:[String:Any], uploadFilePath:String, timeout:Int) throws -&gt; Bool
+
+//批量下载文件
+public func batchDownload(address:String, name:String?, downloadDirectory:String,
+                          downloadFilePaths:[String], saveDir:String, checkValidity:Bool, timeout:Int)throws -&gt;Bool
+                          
+//服务请求
+public func service(path:String, headers:[String:String]?,
+                    data:[String:Any], timeout:Int, traceId:String, callback:@escaping(_ code:Int, _ data:Any?)-&gt;Void)
+                    
+//服务请求
+public func service(path:String, headers:[String:String]?,
+                    string:String, timeout:Int, traceId:String, callback:@escaping(_ code:Int, _ data:Any?)-&gt;Void)
+</code></pre> <h2 id="安全管理器-securitymanager"><a href="#安全管理器-securitymanager" class="header-anchor">#</a> 安全管理器 SecurityManager</h2> <p>安全管理器，提供获取加密/解密套件的接口。我们可以通过该对象提供的方法对内容进行加密或解密。</p> <h3 id="securitymanager接口说明"><a href="#securitymanager接口说明" class="header-anchor">#</a> SecurityManager接口说明</h3> <pre><code>//获取公共加密套件
+public func getPublicCipher()-&gt;ICipher
+
+//获取加密套件
+public func getCipher(key:[UInt8])-&gt;ICipher
+
+//获取加密套件
+public func getCipher(keyPair:SecKeyPair)-&gt;ICipher
+
+//获取加密套件
+public func getCipher(keyStirng:String)-&gt;ICipher
+</code></pre> <h3 id="icipher接口说明"><a href="#icipher接口说明" class="header-anchor">#</a> ICipher接口说明</h3> <pre><code>//加密
+func encrypt(data:Data) -&gt; Data
+
+//解密
+func decrypt(data:Data) -&gt; Data</code></pre></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新于:</span> <span class="time">1/7/2020, 2:29:53 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/pages/ios/Fox3.0 APP打包指南-IOS.html" class="prev">APP打包指南</a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.6be13b1b.js" defer></script><script src="/assets/js/2.cf95f4ea.js" defer></script><script src="/assets/js/38.4876a45a.js" defer></script>
+  </body>
+</html>
